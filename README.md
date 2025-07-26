@@ -25,27 +25,34 @@ whether a given SMS message is **Spam** or **Ham (Not Spam)**.
   
 ##  Installation
 
-1. Clone this repository:
-   
-   git clone https://github.com/your-username/spam-detector.git
-   cd spam-detector
-
-2. Create a virtual environment:
+1. Create a virtual environment:
 
 python -m venv .venv
-.venv\Scripts\activate   # On Windows
+
+.venv\Scripts\activate  
+
 Install required packages:
 
 pip install pandas scikit-learn
 
 ▶How to Run
-Make sure spam.csv is in the same directory as spam_detector.py.
+Make sure spam.csv is in the same directory as spam_detector.py
+
+## Sample Code Preview
+
+df = pd.read_csv("spam.csv", encoding='latin-1')[['v1', 'v2']]
+df.columns = ['label', 'message']
+df['label'] = df['label'].map({'ham': 0, 'spam': 1})
 
 ## Run the script:
 
 python spam_detector.py
 
 You’ll see the accuracy score, confusion matrix, and a classification report printed in the terminal.
+
+## Accuracy
+
+Achieved an accuracy of ~75% using Basic Text vectorization.
 
 ## Submitted
 
