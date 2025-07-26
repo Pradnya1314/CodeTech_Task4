@@ -1,4 +1,4 @@
-## Machine Learning Modle Implementation
+## Machine Learning Model Implementation
 
 This project is a simple spam message classifier built using Python and Scikit-learn. It uses a Naive Bayes algorithm to detect 
 whether a given SMS message is **Spam** or **Ham (Not Spam)**.
