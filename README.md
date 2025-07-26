@@ -56,6 +56,7 @@ Achieved an accuracy of ~75% using Basic Text vectorization.
 
 ## Submitted
 
-Pradnya Pramod Mhatre
+Pradnya Pramod Mhatre.
+
 Intership:CodeTech_Task4
 
